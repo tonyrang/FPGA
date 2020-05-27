@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/ip/micro_mcu_processing_system7_0_0/sim/micro_mcu_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/ip/micro_mcu_xbar_0/sim/micro_mcu_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/ip/micro_mcu_axi_bram_ctrl_0_bram_1/sim/micro_mcu_axi_bram_ctrl_0_bram_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_axi_bram_ctrl_0_bram_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/sim/micro_mcu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1E8GRPI
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_RG8MJI
+INFO: [VRFC 10-311] analyzing module micro_mcu
+INFO: [VRFC 10-311] analyzing module micro_mcu_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_CIZ9QY
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/ip/micro_mcu_auto_pc_1/sim/micro_mcu_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.ip_user_files/bd/micro_mcu/ip/micro_mcu_auto_pc_0/sim/micro_mcu_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Xilinx-tools/xc7z020-prj/first-020/first-020.srcs/sources_1/bd/micro_mcu/hdl/micro_mcu_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_mcu_wrapper

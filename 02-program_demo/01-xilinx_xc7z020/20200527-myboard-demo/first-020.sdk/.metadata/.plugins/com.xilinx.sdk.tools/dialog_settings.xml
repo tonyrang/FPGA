@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="micro_mcu_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="false" key="micro_mcu_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="" key="micro_mcu_wrapper_hw_platform_0-offSet"/>
+	<item value="" key="micro_mcu_wrapper_hw_platform_0-imgFile"/>
+	<item value="false" key="micro_mcu_wrapper_hw_platform_0-blankCheck"/>
+	<item value="" key="micro_mcu_wrapper_hw_platform_0-fsblFile"/>
+	<item value="Auto Detect" key="micro_mcu_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="micro_mcu_wrapper_hw_platform_0-target"/>
+	<item value="qspi-x4-single" key="micro_mcu_wrapper_hw_platform_0-flashType"/>
+</section>

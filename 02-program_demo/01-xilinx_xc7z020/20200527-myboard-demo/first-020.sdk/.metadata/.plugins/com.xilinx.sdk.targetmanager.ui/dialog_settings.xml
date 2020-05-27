@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="micro_mcu_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="micro_mcu_wrapper.bit" key="micro_mcu_wrapper_hw_platform_0-bitFile"/>
+	<item value="micro_mcu_wrapper.mmi" key="micro_mcu_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="micro_mcu_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="micro_mcu_wrapper_hw_platform_0-device"/>
+	<item value="false" key="micro_mcu_wrapper_hw_platform_0-partial_bit"/>
+</section>

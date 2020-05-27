@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="micro_mcu_xbar_0_synth_1" LaunchDir="E:/Xilinx-tools/xc7z020-prj/first-020/first-020.runs/micro_mcu_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="micro_mcu_auto_pc_1_synth_1" LaunchDir="E:/Xilinx-tools/xc7z020-prj/first-020/first-020.runs/micro_mcu_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="micro_mcu_auto_pc_0_synth_1" LaunchDir="E:/Xilinx-tools/xc7z020-prj/first-020/first-020.runs/micro_mcu_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="micro_mcu_axi_bram_ctrl_0_1_synth_1" LaunchDir="E:/Xilinx-tools/xc7z020-prj/first-020/first-020.runs/micro_mcu_axi_bram_ctrl_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="micro_mcu_axi_bram_ctrl_0_bram_1_synth_1" LaunchDir="E:/Xilinx-tools/xc7z020-prj/first-020/first-020.runs/micro_mcu_axi_bram_ctrl_0_bram_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
