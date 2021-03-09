@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar  9 14:12:34 2021
+# Process ID: 59840
+# Current directory: E:/FPGA/secure_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13964 E:\FPGA\secure_zynq\secure_zynq.xpr
+# Log file: E:/FPGA/secure_zynq/vivado.log
+# Journal file: E:/FPGA/secure_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/secure_zynq/secure_zynq.xpr
+update_compile_order -fileset sources_1

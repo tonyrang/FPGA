@@ -1,0 +1,13 @@
+set_property PACKAGE_PIN AB4 [get_ports {leds_4bits_tri_o[3]}]
+set_property PACKAGE_PIN AB5 [get_ports {leds_4bits_tri_o[2]}]
+set_property PACKAGE_PIN AB6 [get_ports {leds_4bits_tri_o[1]}]
+set_property PACKAGE_PIN AB7 [get_ports {leds_4bits_tri_o[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_4bits_tri_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_4bits_tri_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_4bits_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_4bits_tri_o[0]}]
+set_property DRIVE 12 [get_ports {leds_4bits_tri_o[3]}]
+set_property DRIVE 12 [get_ports {leds_4bits_tri_o[2]}]
+set_property DRIVE 12 [get_ports {leds_4bits_tri_o[1]}]
+set_property DRIVE 12 [get_ports {leds_4bits_tri_o[0]}]

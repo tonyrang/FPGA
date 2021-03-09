@@ -1,0 +1,8 @@
+a demo howto add a user ip to vivado & secure a bit boot fsbl
+
+prj vivado 2019.2
+
+add ip setting:
+	PRJ-Settings -> IP -> IP Repositories -> + (IP local dir:\secure_zynq\axi_lite_hls\proj_axi_lite\solution1\impl\ip)
+	
+	-> ip Catalog -> add

@@ -1,0 +1,1984 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 44380
+License: Customer
+
+Current time: 	Tue Mar 09 14:19:18 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 55 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: E:/FPGA/secure_zynq
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.2
+RDI_DATADIR: D:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/FPGA/secure_zynq/vivado.log
+Vivado journal file location: 	E:/FPGA/secure_zynq/vivado.jou
+Engine tmp dir: 	E:/FPGA/secure_zynq/.Xil/Vivado-44380-DESKTOP-71JN9RA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 803 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 85 MB (+86268kb) [00:00:05]
+// [Engine Memory]: 637 MB (+516831kb) [00:00:05]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: E:\FPGA\secure_zynq\secure_zynq.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/FPGA/secure_zynq/secure_zynq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 842 MB. GUI used memory: 51 MB. Current time: 3/9/21, 2:19:20 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 865 MB (+204937kb) [00:00:10]
+// [GUI Memory]: 116 MB (+28928kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2274 ms.
+// Tcl Message: open_project E:/FPGA/secure_zynq/secure_zynq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'. 
+// [Engine Memory]: 912 MB (+3832kb) [00:00:12]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 926.199 ; gain = 260.164 
+// Project name: secure_zynq; location: E:/FPGA/secure_zynq; part: xc7z020clg484-2
+dismissDialog("Open Project"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cr)
+selectMenuItem((HResource) null, "Launch Vitis"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// bB (cr):  Launch Vitis : addNotify
+// CommandFailedException: ERROR: [Common 17-70] Application Exception: Not found in path: vitis 
+// HOptionPane Error: 'Vitis launch failed (Vitis)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cr)
+selectMenuItem((HResource) null, "Launch Vitis"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// bB (cr):  Launch Vitis : addNotify
+// CommandFailedException: ERROR: [Common 17-70] Application Exception: Not found in path: vitis 
+// HOptionPane Error: 'Vitis launch failed (Vitis)'
+// 'X' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0 Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Successfully read diagram <base_zynq> from BD file <E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 987 MB (+30736kb) [00:00:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  1718 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// [GUI Memory]: 125 MB (+2291kb) [00:00:43]
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 983.727 ; gain = 3.504 
+// 'bD' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 995 MB. GUI used memory: 63 MB. Current time: 3/9/21, 2:19:55 PM CST
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Z (cr): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (Z)
+dismissDialog("Export Hardware"); // Z (cr)
+// Tcl Message: write_hw_platform -fixed -force  -file E:/FPGA/secure_zynq/base_zynq_wrapper.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: E:/FPGA/secure_zynq/base_zynq_wrapper.xsa ... 
+// bB (cr):  Export Hardware : addNotify
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds 
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: E:/FPGA/secure_zynq/base_zynq_wrapper.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1035.711 ; gain = 50.418 
+// [Engine Memory]: 1,042 MB (+6878kb) [00:01:02]
+// Elapsed time: 10 seconds
+dismissDialog("Export Hardware"); // bB (cr)
+// Elapsed time: 1739 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "exa"); // OverlayTextField (ay)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// I (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2078 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // L (E, I) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,042 MB. GUI used memory: 79 MB. Current time: 3/9/21, 2:49:56 PM CST
+// Elapsed time: 229 seconds
+selectComboBox(PAResourceQtoS.SettingsProjectIPPage_IP_LOCATION, "Choose Location...", 1); // e (Q, I)
+dismissFolderChooser();
+// Elapsed time: 29 seconds
+selectComboBox(PAResourceQtoS.SettingsProjectIPPage_IP_LOCATION, "Choose Location...", 1); // e (Q, I)
+dismissFolderChooser();
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bB (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bB (SwingUtilities.SharedOwnerFrame)
+// Elapsed time: 12 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ex"); // OverlayTextField (ay, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Alliance Partners ;  ;  ;  ; ", 1); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Building Blocks ;  ;  ;  ; ", 3); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Digital Signal Processing ;  ;  ;  ; ", 2); // L (O, cr)
+// PAPropertyPanels.initPanels (D:/Xilinx/Vivado/2019.2/data/) elapsed time: 0.2s
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0, "User Repository", 0, true); // L (O, cr) - Node
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cr)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+// [GUI Memory]: 136 MB (+4977kb) [00:35:15]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+// Elapsed time: 27 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ex"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Arm Cortex-M3 Processor", 1, "Arm Cortex-M3 Processor", 0, false, false, false, false, true, false); // L (O, ResizableWindow) - Popup Trigger
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Mutex", 3, "Mutex", 0, false); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Complex Multiplier", 2, "Complex Multiplier", 0, false); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Mutex", 3, "Mutex", 0, false); // L (O, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ex"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Complex Multiplier", 2, "Complex Multiplier", 0, false); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Arm Cortex-M3 Processor", 1, "Arm Cortex-M3 Processor", 0, false); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Arm Cortex-M1 Processor", 0, "Arm Cortex-M1 Processor", 0, false); // L (O, ResizableWindow)
+// Elapsed time: 14 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // ai (ao, c)
+setFolderChooser("E:/FPGA/secure_zynq/axi_lite/proj_axi_lite");
+// Elapsed time: 19 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 43 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Add Sources  : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2/aa13e01061fa77cb/aa13e01061fa77cb.xci] -lib_map_path [list {modelsim=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/modelsim} {questa=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/questa} {riviera=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/riviera} {activehdl=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/activehdl}] -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// a (cr): Critical Messages: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Add Sources"); // bB (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb (aa13e01061fa77cb.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb (aa13e01061fa77cb.xci)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb (aa13e01061fa77cb.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb (aa13e01061fa77cb.xci)]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_COPY_IP, "Copy IP..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_COPY_IP
+// d (cr): Copy IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (d)
+// 'b' command handler elapsed time: 4 seconds
+// TclEventType: IP_LOCK_CHANGE
+dismissDialog("Copy IP"); // d (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: copy_ip -name aa13e01061fa77cb_1 -dir e:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2 [get_ips  aa13e01061fa77cb] 
+// [GUI Memory]: 145 MB (+2937kb) [00:38:04]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb (aa13e01061fa77cb.xci)]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2/aa13e01061fa77cb/aa13e01061fa77cb.xci] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (D:/Xilinx/Vivado/2019.2/data/) elapsed time: 0.2s
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2/aa13e01061fa77cb/aa13e01061fa77cb.xci 
+dismissDialog("Remove Sources"); // bB (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_hls_inst_0 (bd_0_hls_inst_0.dcp)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_wrapper (bd_0_wrapper.dcp)]", 7, false); // B (F, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb_1 (aa13e01061fa77cb_1.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aa13e01061fa77cb_1 (aa13e01061fa77cb_1.xci)]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files e:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2/aa13e01061fa77cb_1/aa13e01061fa77cb_1.xci] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  e:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.cache/ip/2019.2/aa13e01061fa77cb_1/aa13e01061fa77cb_1.xci 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+dismissDialog("Remove Sources"); // bB (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/verilog/example.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/verilog/example.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 4, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/vhdl/example.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/vhdl/example.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/example.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/example.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example (example.v)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/verilog/example.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/verilog/example.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi (example_BUS_A_s_axi.v)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi (example_BUS_A_s_axi.v)]", 7, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/verilog/example_BUS_A_s_axi.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/verilog/example_BUS_A_s_axi.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi (example_BUS_A_s_axi.v)]", 9, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/verilog/example_BUS_A_s_axi.v] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/verilog/example_BUS_A_s_axi.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi(behave) (example_BUS_A_s_axi.vhd)]", 11, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/vhdl/example_BUS_A_s_axi.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/vhdl/example_BUS_A_s_axi.vhd 
+// [GUI Memory]: 154 MB (+1908kb) [00:39:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi(behave) (example_BUS_A_s_axi.vhd)]", 10, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/vhdl/example_BUS_A_s_axi.vhd] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/vhdl/example_BUS_A_s_axi.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 6, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_hls_inst_0 (bd_0_hls_inst_0.dcp)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_hls_inst_0 (bd_0_hls_inst_0.dcp)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_hls_inst_0 (bd_0_hls_inst_0.dcp)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd), example_BUS_A_s_axi_U : example_BUS_A_s_axi(behave) (example_BUS_A_s_axi.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/vhdl/example.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/vhdl/example.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_wrapper (bd_0_wrapper.dcp)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bd_0_wrapper (bd_0_wrapper.dcp)]", 5, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example(behav) (example.vhd)]", 6, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/vhdl/example.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/syn/vhdl/example.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi (example_BUS_A_s_axi.v)]", 7, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/example_BUS_A_s_axi.v] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/verilog/example_BUS_A_s_axi.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_BUS_A_s_axi(behave) (example_BUS_A_s_axi.vhd)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/vhdl/example_BUS_A_s_axi.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  E:/FPGA/secure_zynq/axi_lite/proj_axi_lite/solution1/impl/ip/hdl/vhdl/example_BUS_A_s_axi.vhd 
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 5); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 5); // B (F, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectCheckBox(PAResourceQtoS.SettingsProjectIPPage_USE_CORE_CONTAINERS_FOR_IP, "Use Core Containers for IP", true); // g (Q, I): TRUE
+selectCheckBox(PAResourceQtoS.SettingsProjectIPPage_USE_CORE_CONTAINERS_FOR_IP, "Use Core Containers for IP", false); // g (Q, I): FALSE
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, IP Defaults]", 1, false); // L (E, I)
+// Elapsed time: 10 seconds
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // E (f, I)
+setFolderChooser("E:/FPGA/secure_zynq/axi_lite");
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "BaseIP ;  ;  ;  ; ", 6); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "BaseIP ;  ;  ;  ; ", 6); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 19, "AXI Peripheral", 0, true); // L (O, cr) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 19); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 19); // L (O, cr)
+// Elapsed time: 29 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay, cr)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+// Elapsed time: 474 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// [GUI Memory]: 163 MB (+805kb) [00:49:46]
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_INTERFACES, "Interfaces", 1); // i (af, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "AXI ;  ;  ;  ; ", 2); // I (O, cr)
+selectTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "aximm ; 1.0 ; xilinx.com ; xilinx.com:interface:aximm:1.0 ; ", 3, "1.0", 1, true); // I (O, cr) - Node
+selectTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "Advanced ;  ;  ;  ; ", 1, "Advanced", 0, true); // I (O, cr) - Node
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "Advanced ;  ;  ;  ; ", 1); // I (O, cr)
+collapseTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "Advanced ;  ;  ;  ; ", 1); // I (O, cr)
+collapseTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // I (O, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // I (O, cr)
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_CORES, "Cores", 0); // i (af, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Connectivity ;  ;  ;  ; ", 38, "Video Connectivity", 0, true); // L (O, cr) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video Connectivity ;  ;  ;  ; ", 38); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video & Image Processing ;  ;  ;  ; ", 37); // L (O, cr)
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video & Image Processing ;  ;  ;  ; ", 37, "Video & Image Processing", 0, false); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Video & Image Processing ;  ;  ;  ; ", 37); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Embedded Processing ;  ;  ;  ; ", 17); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cr)
+selectButton(PAResourceCommand.PACommandNames_CUSTOMIZE_CORE, "IP Catalog_customize_core"); // E (f, cr)
+selectTab((HResource) null, (HResource) null, "Bus Definition Properties", 0); // aL (aI, cr)
+// Elapsed time: 22 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "E:/FPGA/secure_zynq/axi_lite", 0); // x (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // E (f, I)
+// Elapsed time: 36 seconds
+setFolderChooser("C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite");
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite", 0); // x (O, I)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+// Elapsed time: 17 seconds
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, IP Defaults]", 1, false); // L (E, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPPackagerPage_ADD_EXTENSION, "Add Extension"); // E (f, I)
+// bO (I): Extension to Filter: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bO)
+dismissDialog("Extension to Filter"); // bO (I)
+// Elapsed time: 15 seconds
+selectButton(PAResourceQtoS.SettingsProjectIPPackagerPage_ADD_EXTENSION, "Add Extension"); // E (f, I)
+// bO (I): Extension to Filter: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceQtoS.SettingsProjectIPPackagerPage_EXTENSION, "E:\FPGA\secure_zynq\axi_lite"); // ac (Q, bO)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bO)
+dismissDialog("Extension to Filter"); // bO (I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 15 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay, cr)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPPackagerPage_ADD_EXTENSION, "Add Extension"); // E (f, I)
+// bO (I): Extension to Filter: addNotify
+setText(PAResourceQtoS.SettingsProjectIPPackagerPage_EXTENSION, "E:\FPGA\secure_zynq\axi_lite\proj_axi_lite\solution1\impl\ip"); // ac (Q, bO)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bO)
+dismissDialog("Extension to Filter"); // bO (I)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "E:\\FPGA\\secure_zynq\\axi_lite", 0); // x (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+// [GUI Memory]: 198 MB (+28396kb) [00:54:17]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 96 MB. Current time: 3/9/21, 3:13:41 PM CST
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Infrastructure ;  ;  ;  ; ", 4); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXIS Infrastructure ;  ;  ;  ; ", 44); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "BaseIP ;  ;  ;  ; ", 46, "BaseIP", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "BaseIP ;  ;  ;  ; ", 46); // L (O, cr)
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_INTERFACES, "Interfaces", 1); // i (af, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "AXI ;  ;  ;  ; ", 2); // I (O, cr)
+selectTreeTableHeader(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "Version", 1); // I (O, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "Advanced ;  ;  ;  ; ", 1); // I (O, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "User ;  ;  ;  ; ", 135); // I (O, cr)
+selectTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "test ; 1.0 ; xilinx.com ; xilinx.com:user:test:1.0 ; ", 140, "test", 0, true); // I (O, cr) - Node
+selectTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "zynq_ftm ; 1.0 ; xilinx.com ; xilinx.com:user:zynq_ftm:1.0 ; ", 142, "zynq_ftm", 0, false); // I (O, cr)
+// Elapsed time: 14 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// Elapsed time: 869 seconds
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Interface Catalog_search"); // x (f, cr): TRUE
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Interface Catalog_search"); // x (f, cr): FALSE
+selectButton(PAResourceAtoD.CoreBrowserView_COLLAPSE_ALL, "Interface Catalog_collapse_all"); // E (f, cr)
+selectButton(PAResourceAtoD.CoreBrowserView_COLLAPSE_ALL, "Interface Catalog_collapse_all"); // E (f, cr)
+selectButton(PAResourceAtoD.CoreBrowserView_COLLAPSE_ALL, "Interface Catalog_collapse_all"); // E (f, cr)
+expandTreeTable(PAResourceItoN.InterfacesTreeTablePanel_INTERFACE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // I (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+// Elapsed time: 307 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "tan"); // OverlayTextField (ay, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay, ResizableWindow)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_INTERFACES, "Interfaces", 1); // i (af, cr)
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_INTERFACES, "Interfaces", 1); // i (af, cr)
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_CORES, "Cores", 0); // i (af, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "tan"); // OverlayTextField (ay, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Standard Bus Interfaces ;  ;  ;  ; ", 3); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Standard Bus Interfaces ;  ;  ;  ; ", 3); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Standard Bus Interfaces ;  ;  ;  ; ", 3, "Standard Bus Interfaces", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPPackagerPage_ADD_EXTENSION, "Add Extension"); // E (f, I)
+// bO (I): Extension to Filter: addNotify
+// Elapsed time: 45 seconds
+setText(PAResourceQtoS.SettingsProjectIPPackagerPage_EXTENSION, "C:\Users\lenovo\AppData\Roaming\Xilinx\Vivado\axi_lite\proj_axi_lite\solution1\impl\ip"); // ac (Q, bO)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bO)
+dismissDialog("Extension to Filter"); // bO (I)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "E:\\FPGA\\secure_zynq\\axi_lite\\proj_axi_lite\\solution1\\impl\\ip", 0); // x (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+// Elapsed time: 18 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (f, I)
+setFolderChooser("C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite");
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bB (cr):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: CREATE_IP_CATALOG
+// c (I): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.2 (64-bit)
+# SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Current time: Tue Mar 09 15:36:56 CST 2021
+# Process ID (PID): 44380
+# OS: Windows 10
+# User: lenovo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.ArrayIndexOutOfBoundsException: 0 (See E:/FPGA/secure_zynq/vivado_pid44380.debug)
+*/
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIVADO HLS IP ;  ;  ;  ; ", 1); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "example ; AXI4 ; Pre-Production ; Included ; tan:hls:example:1.0", 2, "example", 0, false); // L (O, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "example", 103, "example", 0, false); // L (O, ResizableWindow)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv tan:hls:example:1.0 example_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {2 728 435} [get_bd_cells example_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 728 435} [get_bd_cells example_0] 
+// Tcl Command: 'set_property location {2 670 431} [get_bd_cells example_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 670 431} [get_bd_cells example_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// bB (cr):  Run Connection Automation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/example_0/s_axi_BUS_A} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins example_0/s_axi_BUS_A] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: Slave segment </example_0/s_axi_BUS_A/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]> 
+dismissDialog("Run Connection Automation"); // bB (cr)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 41 seconds
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (at, r): FALSE
+selectCheckBox(PAResourceEtoH.HACGCIPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g (at, r): TRUE
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // E (f, r)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_IP_LOCATION, "IP Location"); // E (f, r)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+dismissDialog("Re-customize IP"); // r (cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells example_0] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// bB (cr):  Save Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <E:\FPGA\secure_zynq\secure_zynq.srcs\sources_1\bd\base_zynq\base_zynq.bd>  Wrote  : <E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ui/bd_fe791730.ui>  
+dismissDialog("Save Design"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 8, false); // L (E, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "C:\\Users\\lenovo\\AppData\\Roaming\\Xilinx\\Vivado\\axi_lite\\proj_axi_lite\\solution1\\impl\\ip", 0); // x (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 210 MB (+2523kb) [01:20:21]
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, I)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// [Engine Memory]: 1,145 MB (+53209kb) [01:20:24]
+// [GUI Memory]: 229 MB (+8055kb) [01:20:24]
+// [Engine Memory]: 1,219 MB (+17578kb) [01:20:25]
+dismissDialog("Settings"); // I (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,225 MB. GUI used memory: 107 MB. Current time: 3/9/21, 3:39:37 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (f, I)
+setFolderChooser("C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite/proj_axi_lite");
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite/proj_axi_lite [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bB (cr):  Refresh All IP Repositories : addNotify
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite/proj_axi_lite'. 
+// c (I): Add Repository: addNotify
+expandTree(RDIResource.AddRepositoryInfoDialog_REPOSITORY_TREE, "[root, c:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite/proj_axi_lite, <html>IPs<span style='color: rgb(128, 128, 128)'>&nbsp;(1)</span></html>]", 1); // i (O, c)
+selectTree(RDIResource.AddRepositoryInfoDialog_REPOSITORY_TREE, "[root, c:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/axi_lite/proj_axi_lite, <html>IPs<span style='color: rgb(128, 128, 128)'>&nbsp;(1)</span></html>, example (tan:hls:example:1.0)]", 2, false); // i (O, c)
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIVADO HLS IP ;  ;  ;  ; ", 1); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "example ; AXI4 ; Pre-Production ; Included ; tan:hls:example:1.0", 2, "example", 0, false); // L (O, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // W
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "example", 103, "example", 0, false); // L (O, ResizableWindow)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv tan:hls:example:1.0 example_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {2 640 439} [get_bd_cells example_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 640 439} [get_bd_cells example_0] 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/example_0/s_axi_BUS_A} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins example_0/s_axi_BUS_A] 
+// Tcl Message: Slave segment </example_0/s_axi_BUS_A/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]> 
+// Elapsed time: 16 seconds
+selectTab((HResource) null, (HResource) null, "Design", 1); // aL (aI, cr)
+selectTab((HResource) null, (HResource) null, "Signals", 2); // aL (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <E:\FPGA\secure_zynq\secure_zynq.srcs\sources_1\bd\base_zynq\base_zynq.bd>  Wrote  : <E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ui/bd_fe791730.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v 
+// Tcl Message: VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/sim/base_zynq.v VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hdl/base_zynq_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block example_0 . 
+// Tcl Message: Exporting to file E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hw_handoff/base_zynq.hwh Generated Block Design Tcl file E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hw_handoff/base_zynq_bd.tcl Generated Hardware Definition File E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1710.527 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_files E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] -directory E:/FPGA/secure_zynq/secure_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/secure_zynq/secure_zynq.ip_user_files -ipstatic_source_dir E:/FPGA/secure_zynq/secure_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/modelsim} {questa=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/questa} {riviera=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/riviera} {activehdl=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bq' command handler elapsed time: 22 seconds
+// Elapsed time: 20 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_HIGHLIGHT, "Highlight"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_MARK, "Mark"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_MARK, "Mark"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_HIGHLIGHT, "Highlight"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // af (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADDRESSEDITOR_WINDOW, "Address Editor"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADDRESSEDITOR_WINDOW
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "example_0 ; s_axi_BUS_A ; Reg ; 0x43C0_0000 ; 64K ; 0x43C0_FFFF", 4, "64K", 4, false); // g (O, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells example_0] 
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (f, I)
+selectButton(RDIResource.HFolderChooserHelpers_JUMP_TO_HOME_DIRECTORY, (String) null); // a (c, JDialog)
+// Elapsed time: 14 seconds
+setFolderChooser("E:/FPGA/secure_zynq/axi_lite_hls/proj_axi_lite");
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  E:/FPGA/secure_zynq/axi_lite_hls/proj_axi_lite [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bB (cr):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA/secure_zynq/axi_lite_hls/proj_axi_lite'. 
+// c (I): Add Repository: addNotify
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,298 MB. GUI used memory: 104 MB. Current time: 3/9/21, 3:44:02 PM CST
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+// [Engine Memory]: 1,298 MB (+18344kb) [01:24:51]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ex"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Example", 3, "Example", 0, false); // L (O, ResizableWindow)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:example:1.0 example_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/example_0/s_axi_BUS_A} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins example_0/s_axi_BUS_A] 
+// Tcl Message: Slave segment </example_0/s_axi_BUS_A/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]> 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <E:\FPGA\secure_zynq\secure_zynq.srcs\sources_1\bd\base_zynq\base_zynq.bd>  Wrote  : <E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ui/bd_fe791730.ui>  
+// Tcl Message: VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v 
+// Tcl Message: VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/sim/base_zynq.v VHDL Output written to : E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hdl/base_zynq_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M . INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block example_0 . 
+// Tcl Message: Exporting to file E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hw_handoff/base_zynq.hwh Generated Block Design Tcl file E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hw_handoff/base_zynq_bd.tcl Generated Hardware Definition File E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd] -directory E:/FPGA/secure_zynq/secure_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/secure_zynq/secure_zynq.ip_user_files -ipstatic_source_dir E:/FPGA/secure_zynq/secure_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/modelsim} {questa=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/questa} {riviera=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/riviera} {activehdl=E:/FPGA/secure_zynq/secure_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bq' command handler elapsed time: 27 seconds
+// Elapsed time: 25 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg484-2 Top: base_zynq_wrapper 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 100 MB. Current time: 3/9/21, 3:45:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,918 MB. GUI used memory: 100 MB. Current time: 3/9/21, 3:45:16 PM CST
+// [Engine Memory]: 1,937 MB (+602554kb) [01:26:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,017 MB. GUI used memory: 100 MB. Current time: 3/9/21, 3:45:31 PM CST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,043 MB (+9595kb) [01:26:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,043 MB. GUI used memory: 100 MB. Current time: 3/9/21, 3:45:56 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1953 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-2 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1868.180 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_axi_bram_ctrl_0_0/synth/base_zynq_axi_bram_ctrl_0_0.vhd:263] INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'full_axi' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280] 
+// Tcl Message: INFO: [Synth 8-3919] null assignment ignored [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350] INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456] 
+// Tcl Message: 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (1#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456] INFO: [Synth 8-638] synthesizing module 'wr_chnl' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer  	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer  	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer  	Parameter C_READ_LATENCY bound to: 1 - type: integer  	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string  	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer  	Parameter C_ECC bound to: 0 - type: integer  	Parameter C_ECC_WIDTH bound to: 0 - type: integer  	Parameter C_ECC_TYPE bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126] INFO: [Synth 8-638] synthesizing module 'wrap_brst' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer  	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (2#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455] INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133] 
+// Tcl Message: 	Parameter C_DATA_BITS bound to: 12 - type: integer  	Parameter C_DEPTH bound to: 8 - type: integer  	Parameter C_XON bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-3491] module 'FDR' declared at 'D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13695' bound to instance 'Data_Exists_DFF' of component 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:230] INFO: [Synth 8-6157] synthesizing module 'FDR' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13695] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter INIT bound to: 1'b0  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000000  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (9#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'rd_chnl' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer  	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer  	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer  	Parameter C_READ_LATENCY bound to: 1 - type: integer  	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer  	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string  	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer  	Parameter C_ECC bound to: 0 - type: integer  	Parameter C_ECC_WIDTH bound to: 0 - type: integer  	Parameter C_ECC_TYPE bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:15207] 
+// Tcl Message: INFO: [Synth 8-3491] module 'axi_gpio' declared at 'e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/f71e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_axi_gpio_0_0/synth/base_zynq_axi_gpio_0_0.vhd:168] INFO: [Synth 8-638] synthesizing module 'axi_gpio' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/f71e/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948] 
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111  	Parameter C_USE_WSTRB bound to: 0 - type: integer  	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer  	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_FAMILY bound to: zynq - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'slave_attachment' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341] 
+// Tcl Message: 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer  	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer  	Parameter C_USE_WSTRB bound to: 0 - type: integer  	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer  	Parameter C_FAMILY bound to: zynq - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'address_decoder' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775] 
+// Tcl Message: 	Parameter C_BUS_AWIDTH bound to: 9 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer  	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pselect_f' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b00  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f' (15#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b01  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (15#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b10  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (15#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b11  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/f71e/hdl/axi_gpio_v2_0_vh_rfs.vhd:443] INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106] 
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 0 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 4 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837] INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (19#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106] 
+// Tcl Message: INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_blk_mem_gen_0_0/synth/base_zynq_blk_mem_gen_0_0.vhd:239] INFO: [Synth 8-256] done synthesizing module 'base_zynq_blk_mem_gen_0_0' (31#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_blk_mem_gen_0_0/synth/base_zynq_blk_mem_gen_0_0.vhd:72] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'base_zynq_example_0_2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_example_0_2/synth/base_zynq_example_0_2.v:58] INFO: [Synth 8-6157] synthesizing module 'example' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example.v:12] 
+// Tcl Message: 	Parameter ap_ST_fsm_state1 bound to: 3'b001  	Parameter ap_ST_fsm_state2 bound to: 3'b010  	Parameter ap_ST_fsm_state3 bound to: 3'b100  	Parameter C_S_AXI_BUS_A_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_BUS_A_ADDR_WIDTH bound to: 6 - type: integer  	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_BUS_A_WSTRB_WIDTH bound to: 4 - type: integer  	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example.v:70] INFO: [Synth 8-6157] synthesizing module 'example_BUS_A_s_axi' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example_BUS_A_s_axi.v:6] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example_BUS_A_s_axi.v:220] INFO: [Synth 8-6155] done synthesizing module 'example_BUS_A_s_axi' (32#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example_BUS_A_s_axi.v:6] INFO: [Synth 8-6155] done synthesizing module 'example' (33#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/823f/hdl/verilog/example.v:12] INFO: [Synth 8-6155] done synthesizing module 'base_zynq_example_0_2' (34#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_example_0_2/synth/base_zynq_example_0_2.v:58] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'base_zynq_processing_system7_0_0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/synth/base_zynq_processing_system7_0_0.v:60] INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'base_zynq_processing_system7_0_0' (39#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/synth/base_zynq_processing_system7_0_0.v:60] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'base_zynq_ps7_0_axi_periph_0' [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:489] INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QHT96L' [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:1456] INFO: [Synth 8-6157] synthesizing module 'base_zynq_auto_pc_0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_auto_pc_0/synth/base_zynq_auto_pc_0.v:58] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_axi_protocol_converter' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226] 
+// Tcl Message: 	Parameter C_S_AXI_PROTOCOL bound to: 0 - type: integer  	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer  	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer  	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_aw_channel' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971] 
+// Tcl Message: 	Parameter C_ID_WIDTH bound to: 12 - type: integer  	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_cmd_translator' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter P_AXBURST_FIXED bound to: 2'b00  	Parameter P_AXBURST_INCR bound to: 2'b01  	Parameter P_AXBURST_WRAP bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_incr_cmd' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_incr_cmd' (40#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_wrap_cmd' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902] 
+// Tcl Message: 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_wrap_cmd' (41#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902] INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_cmd_translator' (42#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224] 
+// Tcl Message: 	Parameter SM_IDLE bound to: 2'b00  	Parameter SM_CMD_EN bound to: 2'b01  	Parameter SM_CMD_ACCEPTED bound to: 2'b10  	Parameter SM_DONE_WAIT bound to: 2'b11  
+// Tcl Message: 	Parameter C_ID_WIDTH bound to: 12 - type: integer  	Parameter LP_RESP_OKAY bound to: 2'b00  	Parameter LP_RESP_EXOKAY bound to: 2'b01  	Parameter LP_RESP_SLVERROR bound to: 2'b10  	Parameter LP_RESP_DECERR bound to: 2'b11  	Parameter P_WIDTH bound to: 20 - type: integer  	Parameter P_DEPTH bound to: 4 - type: integer  	Parameter P_AWIDTH bound to: 2 - type: integer  	Parameter P_RWIDTH bound to: 2 - type: integer  	Parameter P_RDEPTH bound to: 4 - type: integer  	Parameter P_RAWIDTH bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] 
+// Tcl Message: 	Parameter C_WIDTH bound to: 20 - type: integer  	Parameter C_AWIDTH bound to: 2 - type: integer  	Parameter C_DEPTH bound to: 4 - type: integer  	Parameter C_EMPTY bound to: 2'b11  	Parameter C_EMPTY_PRE bound to: 2'b00  	Parameter C_FULL bound to: 2'b10  	Parameter C_FULL_PRE bound to: 2'b01  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo' (45#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] 
+// Tcl Message: 	Parameter C_WIDTH bound to: 2 - type: integer  	Parameter C_AWIDTH bound to: 2 - type: integer  	Parameter C_DEPTH bound to: 4 - type: integer  	Parameter C_EMPTY bound to: 2'b11  	Parameter C_EMPTY_PRE bound to: 2'b00  	Parameter C_FULL bound to: 2'b10  	Parameter C_FULL_PRE bound to: 2'b01  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized0' (45#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_b_channel' (46#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_ar_channel' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082] 
+// Tcl Message: 	Parameter C_ID_WIDTH bound to: 12 - type: integer  	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334] 
+// Tcl Message: 	Parameter SM_IDLE bound to: 2'b00  	Parameter SM_CMD_EN bound to: 2'b01  	Parameter SM_CMD_ACCEPTED bound to: 2'b10  	Parameter SM_DONE bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm' (47#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334] INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_ar_channel' (48#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_r_channel' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811] 
+// Tcl Message: 	Parameter C_ID_WIDTH bound to: 12 - type: integer  	Parameter C_DATA_WIDTH bound to: 32 - type: integer  	Parameter P_WIDTH bound to: 13 - type: integer  	Parameter P_DEPTH bound to: 32 - type: integer  	Parameter P_AWIDTH bound to: 5 - type: integer  	Parameter P_D_WIDTH bound to: 34 - type: integer  	Parameter P_D_DEPTH bound to: 32 - type: integer  	Parameter P_D_AWIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] 
+// Tcl Message: 	Parameter C_WIDTH bound to: 34 - type: integer  	Parameter C_AWIDTH bound to: 5 - type: integer  	Parameter C_DEPTH bound to: 32 - type: integer  	Parameter C_EMPTY bound to: 5'b11111  	Parameter C_EMPTY_PRE bound to: 5'b00000  	Parameter C_FULL bound to: 5'b11110  	Parameter C_FULL_PRE bound to: 5'b11010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized1' (48#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] 
+// Tcl Message: 	Parameter C_WIDTH bound to: 13 - type: integer  	Parameter C_AWIDTH bound to: 5 - type: integer  	Parameter C_DEPTH bound to: 32 - type: integer  	Parameter C_EMPTY bound to: 5'b11111  	Parameter C_EMPTY_PRE bound to: 5'b00000  	Parameter C_FULL bound to: 5'b11110  	Parameter C_FULL_PRE bound to: 5'b11010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_simple_fifo__parameterized2' (48#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816] INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s_r_channel' (49#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (50#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (51#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 73 - type: integer  	Parameter C_REG_CONFIG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' (52#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 37 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized0' (52#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 14 - type: integer  	Parameter C_REG_CONFIG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized1' (52#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 47 - type: integer  	Parameter C_REG_CONFIG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized2' (52#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized3' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 35 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized3' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized4' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 36 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized4' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized5' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 2 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized5' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized6' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: virtex6 - type: string  	Parameter C_DATA_WIDTH bound to: 34 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized6' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice__parameterized0' (53#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_b2s' (54#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226] INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_axi_protocol_converter' (55#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808] INFO: [Synth 8-6155] done synthesizing module 'base_zynq_auto_pc_0' (56#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_auto_pc_0/synth/base_zynq_auto_pc_0.v:58] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_C5D3YK' (60#1) [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:2014] INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1JB4A1T' [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:2314] INFO: [Synth 8-6157] synthesizing module 'base_zynq_auto_pc_2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_auto_pc_2/synth/base_zynq_auto_pc_2.v:58] INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_20_axi_protocol_converter__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_20_axi_protocol_converter__parameterized0' (60#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808] INFO: [Synth 8-6155] done synthesizing module 'base_zynq_auto_pc_2' (61#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_auto_pc_2/synth/base_zynq_auto_pc_2.v:58] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1JB4A1T' (62#1) [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:2314] INFO: [Synth 8-6157] synthesizing module 'base_zynq_xbar_0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_xbar_0/synth/base_zynq_xbar_0.v:59] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_axi_crossbar' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_crossbar' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:2239] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_si_transactor' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3800] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_addr_decoder' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:794] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_VALUE bound to: 30'b010000010010000000000000000000  	Parameter C_DATA_WIDTH bound to: 30 - type: integer  	Parameter C_BITS_PER_LUT bound to: 6 - type: integer  	Parameter C_NUM_LUT bound to: 5 - type: integer  	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (63#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62] INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (64#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_VALUE bound to: 30'b010000000000000000000000000000  	Parameter C_DATA_WIDTH bound to: 30 - type: integer  	Parameter C_BITS_PER_LUT bound to: 6 - type: integer  	Parameter C_NUM_LUT bound to: 5 - type: integer  	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (64#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_VALUE bound to: 30'b010000111100000000000000000000  	Parameter C_DATA_WIDTH bound to: 30 - type: integer  	Parameter C_BITS_PER_LUT bound to: 6 - type: integer  	Parameter C_NUM_LUT bound to: 5 - type: integer  	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (64#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133] INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_addr_decoder' (65#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:794] INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_FIFO_WIDTH bound to: 8 - type: integer  	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 4 - type: integer  	Parameter C_USE_FULL bound to: 0 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 4 - type: integer  	Parameter P_EMPTY bound to: 4'b1111  	Parameter P_ALMOSTEMPTY bound to: 4'b0000  	Parameter P_ALMOSTFULL_TEMP bound to: 5'b11110  	Parameter P_ALMOSTFULL bound to: 4'b1110  	Parameter P_NUM_REPS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_ndeep_srl' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_A_WIDTH bound to: 4 - type: integer  	Parameter P_SRLASIZE bound to: 5 - type: integer  	Parameter P_SRLDEPTH bound to: 32 - type: integer  	Parameter P_NUMSRLS bound to: 1 - type: integer  	Parameter P_SHIFT_DEPTH bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78115] 
+// Tcl Message: 	Parameter INIT bound to: 32'b00000000000000000000000000000000  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (66#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78115] INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_ndeep_srl' (67#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo' (68#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_arbiter_resp' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:1025] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_NUM_S bound to: 4 - type: integer  	Parameter C_NUM_S_LOG bound to: 2 - type: integer  	Parameter C_GRANT_ENC bound to: 1 - type: integer  	Parameter C_GRANT_HOT bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_arbiter_resp' (69#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:1025] INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_RATIO bound to: 4 - type: integer  	Parameter C_SEL_WIDTH bound to: 2 - type: integer  	Parameter C_DATA_WIDTH bound to: 48 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (70#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_si_transactor' (71#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3800] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_si_transactor__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3800] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_RATIO bound to: 4 - type: integer  	Parameter C_SEL_WIDTH bound to: 2 - type: integer  	Parameter C_DATA_WIDTH bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (71#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_si_transactor__parameterized0' (71#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3800] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_splitter' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461] 
+// Tcl Message: 	Parameter C_NUM_M bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_splitter' (72#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_wdata_router' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4736] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_WMESG_WIDTH bound to: 38 - type: integer  	Parameter C_NUM_MASTER_SLOTS bound to: 4 - type: integer  	Parameter C_SELECT_WIDTH bound to: 3 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_axic_reg_srl_fifo' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:889] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_FIFO_WIDTH bound to: 3 - type: integer  	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter C_USE_FULL bound to: 1 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter P_EMPTY bound to: 3'b111  	Parameter P_ALMOSTEMPTY bound to: 3'b000  	Parameter P_ALMOSTFULL_TEMP bound to: 4'b1110  	Parameter P_ALMOSTFULL bound to: 3'b110  	Parameter P_NUM_REPS bound to: 1 - type: integer  	Parameter ZERO bound to: 2'b10  	Parameter ONE bound to: 2'b11  	Parameter TWO bound to: 2'b01  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_ndeep_srl__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_A_WIDTH bound to: 3 - type: integer  	Parameter P_SRLASIZE bound to: 5 - type: integer  	Parameter P_SRLDEPTH bound to: 32 - type: integer  	Parameter P_NUMSRLS bound to: 1 - type: integer  	Parameter P_SHIFT_DEPTH bound to: 8 - type: integer  
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_FIFO_WIDTH bound to: 8 - type: integer  	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter C_USE_FULL bound to: 0 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter P_EMPTY bound to: 3'b111  	Parameter P_ALMOSTEMPTY bound to: 3'b000  	Parameter P_ALMOSTFULL_TEMP bound to: 4'b1110  	Parameter P_ALMOSTFULL bound to: 3'b110  	Parameter P_NUM_REPS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo__parameterized0' (74#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_wdata_mux' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_WMESG_WIDTH bound to: 38 - type: integer  	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer  	Parameter C_SELECT_WIDTH bound to: 1 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_wdata_mux' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60] INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized7' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_DATA_WIDTH bound to: 42 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized7' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized8' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_DATA_WIDTH bound to: 37 - type: integer  	Parameter C_REG_CONFIG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized8' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized9' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_DATA_WIDTH bound to: 14 - type: integer  	Parameter C_REG_CONFIG bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized9' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized10' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_DATA_WIDTH bound to: 47 - type: integer  	Parameter C_REG_CONFIG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized10' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476] INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_FIFO_WIDTH bound to: 8 - type: integer  	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer  	Parameter C_USE_FULL bound to: 0 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer  	Parameter P_EMPTY bound to: 2'b11  	Parameter P_ALMOSTEMPTY bound to: 2'b00  	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110  	Parameter P_ALMOSTFULL bound to: 2'b10  	Parameter P_NUM_REPS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_ndeep_srl__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_A_WIDTH bound to: 2 - type: integer  	Parameter P_SRLASIZE bound to: 5 - type: integer  	Parameter P_SRLDEPTH bound to: 32 - type: integer  	Parameter P_NUMSRLS bound to: 1 - type: integer  	Parameter P_SHIFT_DEPTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_ndeep_srl__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:1135] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_wdata_mux__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_WMESG_WIDTH bound to: 38 - type: integer  	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer  	Parameter C_SELECT_WIDTH bound to: 1 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_wdata_mux__parameterized0' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo__parameterized2' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_FIFO_WIDTH bound to: 8 - type: integer  	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer  	Parameter C_USE_FULL bound to: 0 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer  	Parameter P_EMPTY bound to: 2'b11  	Parameter P_ALMOSTEMPTY bound to: 2'b00  	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110  	Parameter P_ALMOSTFULL bound to: 2'b10  	Parameter P_NUM_REPS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_19_axic_srl_fifo__parameterized2' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v:698] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_wdata_mux__parameterized1' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_WMESG_WIDTH bound to: 38 - type: integer  	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer  	Parameter C_SELECT_WIDTH bound to: 1 - type: integer  	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer  	Parameter P_FIFO_DEPTH_LOG bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_wdata_mux__parameterized1' (75#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4561] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_decerr_slave' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501] 
+// Tcl Message: 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer  	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer  	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer  	Parameter C_RESP bound to: 3 - type: integer  	Parameter P_WRITE_IDLE bound to: 2'b00  	Parameter P_WRITE_DATA bound to: 2'b01  	Parameter P_WRITE_RESP bound to: 2'b10  	Parameter P_READ_IDLE bound to: 1'b0  	Parameter P_READ_DATA bound to: 1'b1  	Parameter P_AXI4 bound to: 0 - type: integer  	Parameter P_AXI3 bound to: 1 - type: integer  	Parameter P_AXILITE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3633] INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_decerr_slave' (76#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501] INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_addr_arbiter' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:423] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_NUM_S bound to: 1 - type: integer  	Parameter C_NUM_S_LOG bound to: 1 - type: integer  	Parameter C_NUM_M bound to: 4 - type: integer  	Parameter C_MESG_WIDTH bound to: 75 - type: integer  	Parameter C_ARB_PRIORITY bound to: 0 - type: integer  	Parameter P_PRIO_MASK bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_addr_arbiter' (77#1) [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:423] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_rst_ps7_0_50M_0/synth/base_zynq_rst_ps7_0_50M_0.vhd:129] INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323] 
+// Tcl Message: 	Parameter C_FAMILY bound to: zynq - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_R_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481] INFO: [Synth 8-638] synthesizing module 'lpf' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816] 
+// Tcl Message: 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949' bound to instance 'POR_SRL_I' of component 'SRL16' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868] INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SRL16' (82#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949] INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106] 
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 1 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter C_SIZE bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'base_zynq' (88#1) [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/synth/base_zynq.v:13] INFO: [Synth 8-256] done synthesizing module 'base_zynq_wrapper' (89#1) [E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/hdl/base_zynq_wrapper.vhd:41] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 2142.387 ; gain = 274.207 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2142.387 ; gain = 274.207 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2142.387 ; gain = 274.207 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.549 . Memory (MB): peak = 2142.387 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/base_zynq_processing_system7_0_0.xdc] for cell 'base_zynq_i/processing_system7_0/inst' Finished Parsing XDC File [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/base_zynq_processing_system7_0_0.xdc] for cell 'base_zynq_i/processing_system7_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/ip/base_zynq_processing_system7_0_0/base_zynq_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_zynq_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/base_zynq_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2229.148 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 39 instances were transformed.   (MUXCY,XORCY) => CARRY4: 1 instance    FDR => FDRE: 37 instances   SRL16 => SRL16E: 1 instance   
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 2229.148 ; gain = 360.969 
+// Tcl Message: 321 Infos, 157 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 2229.148 ; gain = 360.969 
+// 'dQ' command handler elapsed time: 67 seconds
+// Elapsed time: 65 seconds
+dismissDialog("Open Elaborated Design"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_2 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_2 -jobs 3 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar  9 15:46:09 2021] Launched synth_2... Run output will be captured here: E:/FPGA/secure_zynq/secure_zynq.runs/synth_2/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// HOptionPane Warning: 'Settings dialog is open. Please close it and try again. (Settings)'
+// 'c' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 3 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar  9 15:48:43 2021] Launched impl_2... Run output will be captured here: E:/FPGA/secure_zynq/secure_zynq.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {E:/FPGA/secure_zynq/secure_zynq.srcs/sources_1/bd/base_zynq/base_zynq.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // i (h, cr)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 14 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 3 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar  9 15:50:37 2021] Launched impl_2... Run output will be captured here: E:/FPGA/secure_zynq/secure_zynq.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, cr)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // E (f, cr)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // E (f, cr)
+selectButton(RDIResource.FilterToolBar_HIDE_ALL, "Hide All"); // a (f, cr)
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 376 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// Elapsed time: 862 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // i (h, cr)
+// Elapsed time: 39 seconds
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "example_0 ; s_axi_BUS_A ; Reg ; 0x43C0_0000 ; 64K ; 0x43C0_FFFF", 4, "example_0", 0, false); // g (O, cr)
+selectButton((HResource) null, "Properties_settings"); // x (f, cr): TRUE
+selectButton((HResource) null, "Properties_settings"); // x (f, cr): FALSE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,085 MB. GUI used memory: 131 MB. Current time: 3/9/21, 4:15:57 PM CST

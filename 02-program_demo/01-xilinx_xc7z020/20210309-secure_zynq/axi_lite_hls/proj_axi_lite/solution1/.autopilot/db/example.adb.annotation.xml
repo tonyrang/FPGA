@@ -1,0 +1,6 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="15" filename="example.cpp" linenumber="103" name="add_ln103" contextFuncName="example" moduleName="example" rtlName="add_ln103_fu_53_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="C:\Users\lenovo\AppData\Roaming\Xilinx\Vivado\axi_lite"><\/item>
+<item  id="16" filename="example.cpp" linenumber="103" name="add_ln103_1" contextFuncName="example" moduleName="example" rtlName="add_ln103_1_fu_58_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="C:\Users\lenovo\AppData\Roaming\Xilinx\Vivado\axi_lite"><\/item>
+<\/annotationInfo>
+</annotationInfo>

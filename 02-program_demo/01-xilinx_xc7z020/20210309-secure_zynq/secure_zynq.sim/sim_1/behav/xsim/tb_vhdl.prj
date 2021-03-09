@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../secure_zynq.ip_user_files/bd/base_zynq/ip/base_zynq_axi_gpio_0_0/sim/base_zynq_axi_gpio_0_0.vhd" \
+"../../../../secure_zynq.ip_user_files/bd/base_zynq/ip/base_zynq_axi_bram_ctrl_0_0/sim/base_zynq_axi_bram_ctrl_0_0.vhd" \
+"../../../../secure_zynq.ip_user_files/bd/base_zynq/ip/base_zynq_rst_ps7_0_50M_0/sim/base_zynq_rst_ps7_0_50M_0.vhd" \
+"../../../../secure_zynq.srcs/sources_1/bd/base_zynq/hdl/base_zynq_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

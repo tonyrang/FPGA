@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2019.2
+Project:             proj_axi_lite
+Solution:            solution1
+Device target:       xc7z020-clg484-2
+Report date:         Tue Mar 09 14:47:26 +0800 2021
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:             72
+FF:              98
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    13.333
+CP achieved post-synthesis:    2.540
+Timing met
