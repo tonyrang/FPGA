@@ -1,0 +1,22 @@
+timestamp=[2021-03-10 11:41:02], mode=WORKBENCH_START, duration=0:00:05.853, duration_ms=5853, data={}
+timestamp=[2021-03-10 11:41:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.705, duration_ms=705, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-03-10 11:42:30], mode=PLATFORM_CREATION, duration=0:00:16.709, duration_ms=16709, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-03-10 11:51:13], mode=PLATFORM_GENERATION, duration=0:05:54.331, duration_ms=354331, data={name=myzynq}
+timestamp=[2021-03-10 13:46:00], mode=WORKBENCH_START, duration=0:00:07.042, duration_ms=7042, data={}
+timestamp=[2021-03-10 13:46:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.835, duration_ms=835, data={editors_count=1, platform_editors_count=1, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,myzynq}
+timestamp=[2021-03-10 13:51:18], mode=PLATFORM_GENERATION, duration=0:03:05.606, duration_ms=185606, data={name=myzynq}
+timestamp=[2021-03-10 14:10:16], mode=WORKBENCH_START, duration=0:00:06.599, duration_ms=6599, data={}
+timestamp=[2021-03-10 14:10:17], mode=WORKBENCH_UI_INIT, duration=0:00:01.181, duration_ms=1181, data={editors_count=4, platform_editors_count=4, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,myzynq}
+timestamp=[2021-03-10 14:18:23], mode=WORKBENCH_START, duration=0:00:06.561, duration_ms=6561, data={}
+timestamp=[2021-03-10 14:18:24], mode=WORKBENCH_UI_INIT, duration=0:00:01.176, duration_ms=1176, data={editors_count=4, platform_editors_count=4, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,myzynq}
+timestamp=[2021-03-10 14:36:58], mode=WORKBENCH_START, duration=0:00:06.584, duration_ms=6584, data={}
+timestamp=[2021-03-10 14:36:59], mode=WORKBENCH_UI_INIT, duration=0:00:01.236, duration_ms=1236, data={editors_count=4, platform_editors_count=4, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,myzynq}
+timestamp=[2021-03-10 14:41:25], mode=PLATFORM_GENERATION, duration=0:03:48.367, duration_ms=228367, data={name=myzynq}
+timestamp=[2021-03-10 14:46:58], mode=PLATFORM_CREATION, duration=0:00:16.392, duration_ms=16392, data={platform_source=dsa, os=linux, processor=ps7_cortexa9, platform=null}
+timestamp=[2021-03-10 14:48:14], mode=APP_CREATION, duration=0:00:13.881, duration_ms=13881, data={name=example, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=myzynq, application_type=application}
+timestamp=[2021-03-10 14:48:38], mode=PLATFORM_GENERATION, duration=0:00:04.180, duration_ms=4180, data={name=myzynq}
+timestamp=[2021-03-10 14:56:55], mode=MISC, duration=0:00:23.396, duration_ms=23396, data={name=example_system, type=bif_creation}
+timestamp=[2021-03-10 15:11:36], mode=APP_CREATION, duration=0:00:04.466, duration_ms=4466, data={name=periph, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=myzynq, application_type=static_lib}
+timestamp=[2021-03-10 15:12:46], mode=APP_CREATION, duration=0:00:11.802, duration_ms=11802, data={name=periph, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=myzynq, application_type=application}
+timestamp=[2021-03-10 15:25:55], mode=PLATFORM_GENERATION, duration=0:00:04.139, duration_ms=4139, data={name=myzynq}
+timestamp=[2021-03-10 15:38:59], mode=MISC, duration=0:00:21.563, duration_ms=21563, data={name=periph_system, type=bif_creation}

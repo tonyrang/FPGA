@@ -1,0 +1,57 @@
+11:41:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\FPGA\visit\temp_xsdb_launch_script.tcl
+11:41:07 INFO  : Registering command handlers for Vitis TCF services
+11:41:08 INFO  : XSCT server has started successfully.
+11:41:08 INFO  : plnx-install-location is set to ''
+11:41:08 INFO  : Successfully done setting XSCT server connection channel  
+11:41:08 INFO  : Successfully done setting workspace for the tool. 
+11:41:08 INFO  : Successfully done query RDI_DATADIR 
+11:42:33 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+11:42:34 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+11:44:25 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+11:44:25 INFO  : No changes in MSS file content so sources will not be generated.
+13:45:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\FPGA\visit\temp_xsdb_launch_script.tcl
+13:46:01 INFO  : XSCT server has started successfully.
+13:46:04 INFO  : plnx-install-location is set to ''
+13:46:07 INFO  : Registering command handlers for Vitis TCF services
+13:46:07 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/FPGA/visit/myzynq/hw/base_zynq_wrapper.xsa is already opened
+
+13:46:07 INFO  : Successfully done setting XSCT server connection channel  
+13:46:07 INFO  : Successfully done query RDI_DATADIR 
+13:46:07 INFO  : Successfully done setting workspace for the tool. 
+13:46:08 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+13:46:08 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+14:06:33 ERROR : Error occurred while generating the device tree.
+14:06:57 INFO  : Saving repository preferences.
+14:06:58 INFO  : Saving repository preferences.
+14:10:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\FPGA\visit\temp_xsdb_launch_script.tcl
+14:10:18 INFO  : XSCT server has started successfully.
+14:10:18 INFO  : Successfully done setting XSCT server connection channel  
+14:10:18 INFO  : plnx-install-location is set to ''
+14:10:18 INFO  : Successfully done setting workspace for the tool. 
+14:10:20 INFO  : Successfully done query RDI_DATADIR 
+14:10:23 INFO  : Registering command handlers for Vitis TCF services
+14:18:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\FPGA\visit\temp_xsdb_launch_script.tcl
+14:18:25 INFO  : XSCT server has started successfully.
+14:18:25 INFO  : plnx-install-location is set to ''
+14:18:25 INFO  : Successfully done setting XSCT server connection channel  
+14:18:25 INFO  : Successfully done setting workspace for the tool. 
+14:18:29 INFO  : Successfully done query RDI_DATADIR 
+14:18:31 INFO  : Registering command handlers for Vitis TCF services
+14:36:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\FPGA\visit\temp_xsdb_launch_script.tcl
+14:37:00 INFO  : XSCT server has started successfully.
+14:37:00 INFO  : plnx-install-location is set to ''
+14:37:00 INFO  : Successfully done setting XSCT server connection channel  
+14:37:00 INFO  : Successfully done setting workspace for the tool. 
+14:37:01 INFO  : Successfully done query RDI_DATADIR 
+14:37:03 INFO  : Registering command handlers for Vitis TCF services
+14:47:00 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/example/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+14:48:38 INFO  : Checking for BSP changes to sync application flags for project 'example'...
+14:51:52 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+14:51:52 INFO  : Successfully done sdx_reload_mss "E:/FPGA/visit/myzynq/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+14:56:32 INFO  : Generated template bif file for example_system
+15:25:55 INFO  : Checking for BSP changes to sync application flags for project 'periph'...
+15:26:39 INFO  : Checking for BSP changes to sync application flags for project 'periph'...
+15:27:20 INFO  : Checking for BSP changes to sync application flags for project 'periph'...
+15:28:05 INFO  : Checking for BSP changes to sync application flags for project 'periph'...
+15:31:54 INFO  : Checking for BSP changes to sync application flags for project 'periph'...
+15:38:38 INFO  : Generated template bif file for periph_system
